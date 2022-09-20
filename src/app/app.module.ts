@@ -3,16 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { RegisterComponent } from './register/register.component';
 import { NgoRegComponent } from './components/ngo-reg/ngo-reg.component';
 import { RestaurantRegComponent } from './components/restaurant-reg/restaurant-reg.component';
+import { LoginComponent } from './components/login/login.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RegisterComponent,
     RestaurantRegComponent,
-    NgoRegComponent
+    NgoRegComponent,
+    LoginComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

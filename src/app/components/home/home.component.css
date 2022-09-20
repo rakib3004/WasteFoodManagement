@@ -1,0 +1,14 @@
+body{
+    background-color:dimgray;
+}
+
+.front{
+    margin: 200px;
+    text-align: center;
+}
+
+.btn{
+    padding: 15px;
+    margin: 25px;
+
+}

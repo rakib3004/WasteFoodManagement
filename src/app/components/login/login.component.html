@@ -1,39 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Create account</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<body class="body">
-	
-	<a href="https://github.com/Mehedi61/Login-form-Sign-up-form"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/c6625ac1f3ee0a12250227cf83ce904423abf351/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png"></a>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+      integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-12 col-sm-8 col-md-6 col-lg-4 offset-sm-2 offset-md-3 offset-lg-4"
+          >
+            <h1 class="mb-3 text-center">Waste Food Management System</h1>
+            <h2 class="mb-3 text-center">
+              Login
+            </h2>
+            <form class="mb-3">
 
-<div class="login-page">
-  <div class="form">
+                <label>Account Type:</label>
+                <div class="row no-gutters">
+                  <div class="form-group">
+                    <label for="accountType" class="sr-only">Account Type</label>
+                    <select class="form-control" id="accountType">
+                      <option value="">Admin</option>
+                      <option value="1">NGO Representative</option>
+                      <option value="2">Restaurant Representative</option>
+                    </select>
+                  </div>
+                </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  required
+                />
+              </div>
 
-    <form>
-      <input type="text" placeholder="&#xf007;  username"/>
-      <input type="password" id="password" placeholder="&#xf023;  password"/>
-      <i class="fas fa-eye" onclick="show()"></i> 
-      <br>
-      <br>
-      <button>LOGIN</button>
-      <p class="message"></p>
-    </form>
+                         
+              <div class="form-group">
+                <label for="password">Password:</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  required
+                />
+              </div>
 
-    <form class="login-form">
-      <button type="button" onclick="window.location.href='signup.html'">SIGN UP</button>
-    </form>
-  </div>
-</div>
-
-  <script>
-    function show(){
-      var password = document.getElementById("password");
-      var icon = document.querySelector(".fas")
-
-      // ========== Checking type of password ===========
-      if(password.type === "password"){
-        password.type = "text";
-      }
-      else {
-        password.type = "password";
-      }
-    };
-  </script>
-</body>
+         
+              <button type="submit" class="btn btn-primary btn-block mb-3">
+                Login
+              </button>
+              <p><a routerLink="">Forget Password?</a></p>
+              <div class="text-center">
+                <p><b>Or</b></p>
+                <a href="#" class="btn btn-success">Create Account</a>
+              </div>
+        </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+      integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+      integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
